@@ -10,10 +10,13 @@ export class Usuario {
     private orcamentos: Orcamento[] = [];
     private metas: Meta[] = [];
 
-    constructor(nome: string, email: string , senha: string) {
+    constructor(nome: string, email: string , senha: string, metas: Meta[] = [], orcamentos: Orcamento[] = [], investimentos: Investimento[] = []) {
         this.nome = nome;
         this.senha = senha;
         this.email = email;
+        this.metas = metas;
+        this.orcamentos = orcamentos;
+        this.investimentos = investimentos;
     }
     
 }
